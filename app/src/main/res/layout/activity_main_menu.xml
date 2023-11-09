@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+<ImageView
+    android:id="@+id/logods"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logods"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp" />
+
+<Button
+    android:id="@+id/buttonNewGame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/logods"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:text="NEW GAME"
+    android:textSize="24sp"
+    android:fontFamily="@font/diablo"
+    android:textColor="#FF9800"
+    android:background="#000000" />
+
+<Button
+    android:id="@+id/buttonViewMap"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/buttonNewGame"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:text="VIEW MAP"
+    android:textSize="24sp"
+    android:fontFamily="@font/diablo"
+    android:textColor="#FF9800"
+    android:background="#000000" />
+
+</RelativeLayout>

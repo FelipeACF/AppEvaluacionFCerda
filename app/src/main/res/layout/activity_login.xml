@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/logods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logods"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logods"
+        android:hint="USER"
+        android:textColorHint="@color/colorHint"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/diablo"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUser"
+        android:hint="PASSWORD"
+        android:textColorHint="@color/colorHint"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/diablo"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#FF9800"
+        android:enabled="false"
+        android:text="LOG IN"
+        android:textSize="24sp"
+        android:fontFamily="@font/diablo"
+        android:textColor="#FF9800" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/indeterminateProgressStyle"
+        android:layout_width="68dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:indeterminateTint="@android:color/holo_orange_light"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="invisible" />
+
+</RelativeLayout>
